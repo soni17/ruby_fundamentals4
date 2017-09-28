@@ -64,3 +64,20 @@ end
 pp arrEast
 
 
+def searchByDirection(arr,direction)
+
+  newArr = []
+  
+  arr.each do |item|
+    if item[:direction] == direction
+      newArr << item[:train]
+    end
+  end
+
+  return newArr
+
+end
+
+
+pp searchByDirection(trains , "south")
+
