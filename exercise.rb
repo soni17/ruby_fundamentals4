@@ -13,3 +13,30 @@ trains = [
 
 pp trains
 
+direction111 = " "
+frequency80B = " "
+direction610 = " "
+
+trains.each do |item|
+
+  if item[:train] == "111"
+    direction111 = item[:direction]
+  end
+
+  if item[:train] == "80B"
+    frequency80B = item[:frequency_in_minutes]
+  end
+
+  if item[:train] == "610"
+    direction610 = item[:direction]
+  end
+
+end
+
+
+puts "The direction of train 111 is #{direction111}"
+puts "The frequency of train 80B is #{frequency80B} minutes" 
+puts "The direction of train 610 is #{direction610}" 
+
+
+
