@@ -37,6 +37,30 @@ end
 puts "The direction of train 111 is #{direction111}"
 puts "The frequency of train 80B is #{frequency80B} minutes" 
 puts "The direction of train 610 is #{direction610}" 
+puts " "
 
+arrNorth = []
+
+trains.each do |item|
+  
+  if item[:direction] == "north"
+    arrNorth << item[:train]
+  end
+
+end
+
+pp arrNorth
+
+
+arrEast = []
+trains.each do |item|
+  
+  if item[:direction] == "east"
+    arrEast << item[:train]
+  end
+
+end
+
+pp arrEast
 
 
