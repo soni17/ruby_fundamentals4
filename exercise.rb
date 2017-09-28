@@ -81,3 +81,11 @@ end
 
 pp searchByDirection(trains , "south")
 
+
+
+trains[3][:first_departure_time] = 6
+
+puts " "
+puts trains
+puts " "
+
